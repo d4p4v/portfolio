@@ -25,4 +25,11 @@ body {
 
 .page {
     @apply min-h-screen h-min overflow-hidden;
+    scroll-snap-align: start;
+}
+
+.snap-container {
+    -webkit-scroll-snap-type: y mandatory;
+    -ms-scroll-snap-type: y mandatory;
+    scroll-snap-type: y mandatory;
 }
